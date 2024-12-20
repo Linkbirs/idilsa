@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comercializadora y Servicios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #003366; /* Azul rey para el texto */
+            background-color: #ffffff; /* Fondo blanco */
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background-color: #003366; /* Azul rey */
+            padding: 60px 20px;
+            color: white;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin: 10px 0;
+        }
+
+        .logo {
+            width: 40%; /* Aumentar el tamaño del logo */
+            margin: 20px auto;
+            animation: pulse 1s infinite alternate; /* Animación de pulso */
+        }
+
+        nav {
+            background: #00509E; /* Azul más claro */
+            padding: 15px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00; /* Color amarillo al pasar el ratón */
+        }
+
+        .content {
+            padding: 20px;
+            background: #f0f0f0; /* Fondo gris claro para el contenido */
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 0.5s ease-in forwards;
+        }
+
+        .content h2 {
+            color: #003366; /* Azul rey para los títulos */
+        }
+
+        .content img {
+            width: 70%; /* Aumentar el tamaño de las imágenes */
+            max-width: 500px; /* Máximo ancho */
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            transition: transform 0.3s; /* Transición para animación de escala */
+        }
+
+        .content img:hover {
+            transform: scale(1.05); /* Efecto de escala al pasar el ratón */
+        }
+
+        .footer {
+            background: #003366; /* Azul rey */
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+            border-radius: 0 0 8px 8px;
+        }
+
+        /* Animaciones */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes pulse {
+            from { transform: scale(1); }
+            to { transform: scale(1.05); }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .fade-in {
+            animation: slideIn 0.5s ease-in forwards;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Comercializadora y Servicios</h1>
+        <img src="https://i.ibb.co/9pYgYx0/logo-1ik4fcne.jpg" alt="Logo" class="logo">
+    </div>
+    
+    <nav>
+        <ul>
+            <li><a href="#comercializadora" class="fade-in">Comercializadora</a></li>
+            <li><a href="#maquinados" class="fade-in">Maquinados</a></li>
+            <li><a href="#lubricacion" class="fade-in">Lubricación</a></li>
+            <li><a href="#servicio" class="fade-in">Servicios</a></li>
+        </ul>
+    </nav>
+
+    <div class="content fade-in" id="comercializadora">
+        <h2>Comercializadora</h2>
+        <a href="https://idilsacomercializadora.com/"><img src="https://i.ibb.co/SNG2BB1/comercializadora.png" alt="Comercializadora"></a>
+        <p>Soluciones personalizadas para tus necesidades industriales.</p>
+    </div>
+
+    <div class="content fade-in" id="maquinados">
+        <h2>Maquinados</h2>
+        <a href="https://www.idilsamaquinados.com/"><img src="https://i.ibb.co/wRWhVRj/maquinados.png" alt="Maquinados"></a>
+        <p>Precisión y calidad en cada trabajo realizado.</p>
+    </div>
+
+    <div class="content fade-in" id="lubricacion">
+        <h2>Lubricación</h2>
+        <a href="https://www.idilsalubricacion.com/"><img src="https://i.ibb.co/r50J47X/lubricacion.png" alt="Lubricación"></a>
+        <p>Productos de alta calidad para el mantenimiento de tu maquinaria.</p>
+    </div>
+
+    <div class="footer">
+        <p>© 2024 IDILSA. Todos los derechos reservados.</p>
+    </div>
+</div>
+
+</body>
+</html>
